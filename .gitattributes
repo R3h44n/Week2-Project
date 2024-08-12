@@ -1,2 +1,6 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+all filter=lfs diff=lfs merge=lfs -text
+node_modules filter=lfs diff=lfs merge=lfs -text
+pantry-app/node_modules/@next/swc-win32-x64-msvc/next-swc.win32-x64-msvc.node filter=lfs diff=lfs merge=lfs -text
+node_modules/** filter=lfs diff=lfs merge=lfs -text
+pantry-app/** filter=lfs diff=lfs merge=lfs -text
+pantry-app/node_modules/** filter=lfs diff=lfs merge=lfs -text
